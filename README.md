@@ -14,30 +14,31 @@ El proyecto está organizado en tres paquetes principales:
 
 ## Clases y Métodos
 
-### Clase `Main` (paquete `aplicacion`)
+### Clase `Main`
+La clase principal que inicia la aplicación.
 
-- `public static void main(String[] args)`: Método principal que inicia la aplicación creando una instancia de `Interfaz` y llamando al método `menu`.
+- **Método `main(String[] args)`**: Método principal que crea una instancia de la clase `Interfaz` y llama al método `menu()` para iniciar la interacción con el usuario.
 
-### Clase `Interfaz` (paquete `interfaz`)
+### Clase `Interfaz`
+Esta clase maneja la interacción con el usuario a través de la consola.
 
-- `public Interfaz()`: Constructor que inicializa el objeto `Scanner`.
-- `public String[] instruccion()`: Lee una línea de entrada del usuario y la divide en un array de strings.
-- `public void menu()`: Muestra el menú de opciones y maneja la lógica de interacción con el usuario.
-- `public void help()`: Muestra las instrucciones disponibles para el usuario.
+- **Atributo `Scanner sc`**: Objeto `Scanner` para leer la entrada del usuario.
+- **Constructor `Interfaz()`**: Inicializa el objeto `Scanner`.
+- **Método `String[] instruccion()`**: Lee una línea de entrada del usuario y la divide en un array de cadenas.
+- **Método `void menu()`**: Muestra el menú de opciones y maneja la lógica de las instrucciones ingresadas por el usuario.
+- **Método `void help()`**: Muestra las instrucciones disponibles para el usuario.
 
-### Clase `Matematicas` (paquete `mates`)
+### Clase `Matematicas`
+Esta clase contiene métodos estáticos para realizar diversas operaciones matemáticas.
 
-- `public static int suma1n(int n)`: Calcula la suma de los números del 1 al `n`.
-- `public static int factorial(int n)`: Calcula el factorial de `n`.
-- `public static int potencia(int n, int p)`: Calcula la potencia de `n` elevado a `p`.
-- `public static int sumaLista(int[] comandos)`: Calcula la suma de los elementos de una lista.
-- `public static double mediaLista(int[] comandos)`: Calcula la media aritmética de los elementos de una lista.
-- `public static double desviacionLista(double[] comandos)`: Calcula la desviación típica de los elementos de una lista.
-- `public static int sumaPares(int n)`: Calcula la suma de los números pares hasta `n`.
-- `public static int sumaParesLista(int[] comandos)`: Calcula la suma de los números pares en una lista.
-- `public static int[] obtenerParesLista(int[] comandos)`: Obtiene una lista de números pares a partir de otra lista.
-- `public static int[] numerosParesLista(int n)`: Genera una lista de los primeros `n` números pares.
-- `public static int productoEscalar(int[] comandos1, int[] comandos2)`: Calcula el producto escalar de dos listas.
+- **Método `static int suma1n(int n)`**: Calcula la suma de los números del 1 al `n` de forma recursiva.
+- **Método `static int factorial(int n)`**: Calcula el factorial de `n` de forma recursiva.
+- **Método `static int potencia(int n, int p)`**: Calcula la potencia de `n` elevado a `p` de forma recursiva.
+- **Método `static int sumaLista(int[] comandos, int n)`**: Calcula la suma de los elementos de un array de enteros de forma recursiva.
+- **Método `static double mediaLista(int[] comandos)`**: Calcula la media aritmética de los elementos de un array de enteros.
+- **Método `static double desviacionLista(double[] comandos)`**: Calcula la desviación típica de los elementos de un array de dobles.
+- **Método `static int sumaPares(int n)`**: Calcula la suma de los números pares hasta `n` de forma recursiva.
+- **Método `static int sumaParesLista(int[] comandos)`**: Calcula la suma de los números pares en un array de enteros de forma recursiva.
 
 ## Uso
 
@@ -48,4 +49,4 @@ Para ejecutar la aplicación, simplemente compila y ejecuta la clase `Main`. El 
 ![UML.png](UML.png)
 
 ## Autor
-Luis Holgado Arranz y Juan Manuel Mbela Ela
+Luis Holgado Arranz y Jesus Alejandro Hernandez Mendez
